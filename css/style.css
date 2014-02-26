@@ -1,8 +1,10 @@
 body {
 	margin: 0;
+	float: center;
+	position: static;
 	padding: 5px;
-	background-color:#000000;
-	_text-align: center;
+	background-color:#BBB;
+	width: 800px;
 }
 
 p {
@@ -15,18 +17,17 @@ p {
 	text-align: justify;
 	line-height: 20px;
 	text-indent: 10px;
-	color: #FFF;
+	color: #000;
 }
 
-div#siteLock {
+.siteLock {
+        display: block;
 	background: transparent;
 	margin: -5px auto 5px auto;
 	text-align: center;
 	padding: 0;
-	float: none;
-	position: relative;
 	height: auto;
-	width: 592px;
+	width: 800px;
 	clear: all;
 }
 
@@ -34,65 +35,65 @@ div {
 	padding: 10px;
 	margin: 0 auto 0 auto;
 	text-align: justify;
-	color: #FFF;
+	color: #000;
 	font-family: arial, times, Times, georgia, serif;
 	font-size: 12px;
 	height: auto;
-	background-color:#E5EBDF;
+	background-color:#BBB;
 }
 
 div#block {
-	width: auto;
+	width: 200px;
 	font-size: 12px;
 	height: auto;
-	position: relative;
-	float: left;
-	background-color:#1F1F1F;
+	position: static;
+	float: static;
+	background-color:#BBB;
 }
 
 div#textos {
 	padding: 8px;
 	margin: 0 auto 0 auto;
 	text-align: justify;
-	color: #333;
+	color: #000;
 	font-family: arial, times, Times, georgia, serif;
-	font-size: 12px;
+	font-size: 13px;
 	height: auto;
-	float: left;
+	float: relative;
 	position: static;
 	line-height: 20px;
-	background-color:#454545
+	background-color:#BBB
 }
 
 div#header {
 	position: static;
 	width: auto;
-
-	/* IE Instruction */
-	_width: 597px;
-
+	text: center;
+	float: center;
 	padding: 0;
-	color:#FFFFFF;
-	background-color:#1F1F1F;
+	color:#000;
+	background-color:#BBB;
 }
+
+
 
 /* SITE TITLE */
 
 h2, h2 a {
 	font-size: 19px;
 	text-transform: uppercase;
-	letter-spacing: 16px;
+	letter-spacing: 24px;
 	text-decoration: none;
-	color: white;
+	color: #000;
 	text-align: center;
 	font-family: Helvetica, Serifa, sans-serif;
 	padding: 32px;
 	margin: 0;
-	text-shadow: 0 3px 1px #000;
+	text-shadow: 0 5px 3px #CCC;
 }
 
 h2 span {
-	color:#000000;
+	color:#FFF;
 	font-size: 12px;
 	font-family: arial;
 	font-variant: small-caps;
@@ -103,27 +104,28 @@ h2 span {
 	_margin-left: -3px;
 
 	text-align: right;
-    text-shadow: 0 1px 5px #ADADAD;
+        text-shadow: 0 1px 5px #CCC;
 }
 
 h2:hover span {
-	color:#00FFFF;
+	color:#CC1100;
 	font-size: 12px;
 	font-family: arial;
 	font-variant: small-caps;
 	letter-spacing: 2px;
+
 
 	/* IE Instruction */
 	_letter-spacing: -1px;
 	_margin-left: -3px;
 
 	text-align: right;
-    text-shadow: 0 1px 5px #ADADAD;
+        text-shadow: 0 1px 2px #9D1309;
 }
 /* ARTICLE TITLES */
 
 h1 {
-	color:#FFF;
+	color:#000;
 	font-family: Times;
 	letter-spacing: -2px;
 	font-size: 40px;
@@ -134,10 +136,7 @@ h1 {
 	margin-left: 14px;
 	margin-top: 10px;
 	max-width: 245px;
-
-	/* IE Instruction */
-	_width: 245px;
-
+	position: relative;
 	text-align: left;
 	font-weight: normal;
 	text-shadow: 0 1px 5px #ADADAD;
@@ -145,7 +144,7 @@ h1 {
 }
 
 h1 span {
-	color:#00FFFF;
+	color:#000;
 	font-size: 12px;
 	font-family: arial;
 	font-variant: small-caps;
@@ -159,26 +158,39 @@ h1 span {
 	text-shadow: none;
 }
 
-/* MENU */
-	/* LISTS */
-	
-ul {
-	width: auto;
+h3, h3 a {
+	padding: 8px;
+	margin: 0 auto 0 auto;
+	font-family: arial, times, Times, georgia, serif;
+	color:#CC1100;
+	font-size: 16px;
+	letter-spacing: 1px;
 
 	/* IE Instruction */
-	_width: 597px;
+	_letter-spacing: -1px;
+	_margin-left: -3px;
 
+	text-align: left;
+	text-shadow: none;
+}
+
+/* MENU */
+	/* LISTS */
+
+ul {
+	width: auto;
 	margin: 0;
 	padding: 6px;
 	position: relative;
-	background-color:#009999;
+	background-color:#CC1100;
 	display: block;
 
 	/* MENU FONT */
 	font-family: Helvetica, Geneva, sans-serif;
 	font-weight: 300;
 	font-size: 12px;
-	color:#000000;
+	color:#FFF;
+	text-align: center;
 }
 
 li {
@@ -191,27 +203,27 @@ li {
 li a:link, li a:visited
 {
 	padding: 10px 6px;
-	color:#000000;
+	color:#000;
 	text-decoration: none;
 	background: transparent;
 }
 
 li a:link:hover, li a:visited:hover
 {
-	color: white;
+	color:#FFF;
 }
 
 li:hover, li.over {
-	background-color: ##009999;
-	color: #FFFFFF;
-	text-shadow: 0 1px 2px #26440A;
+
+	color: #000;
+	text-shadow: 0 1px 2px #CCC;
 }
 
 div#textos a:link, div#textos a:visited
 {
-	color:#444;
+	color:#FFF;
 	border-bottom: 1px dotted #5E952C;
-	background-color: white;
+	background-color: #000;
 	cursor: move;
 	text-decoration: none;
 	padding: 2px;
@@ -219,8 +231,8 @@ div#textos a:link, div#textos a:visited
 
 div#textos a:link:hover
 {
-	color:#000;
-	background-color:#E3F7DA;
+	color:#FFF;
+	background-color:#000;
 	text-decoration: none;
 	padding: 2px;
 }
@@ -231,7 +243,7 @@ img.left {
 	position: relative;
 	margin: 5px 5px 0 0;
 	padding: 3px;
-	background-color:#FEFFF3;
+	background-color:#000;
 	border: 1px solid #DFF5D7;
 }
 
@@ -240,11 +252,11 @@ img.right {
 	position: relative;
 	margin: 5px 0 0 5px;
 	padding: 3px;
-	background-color:#FEFFF3;
+	background-color:#000;
 	border: 1px solid #A6DF8F;
 }
 
 img:hover, img.over {
-	background-color:#C6EDB6;
+	background-color:#000
 	border: 1px solid #7ACC59;
 }
