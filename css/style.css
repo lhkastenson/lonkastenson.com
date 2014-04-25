@@ -1,8 +1,7 @@
 body {
 	margin: 0;
-	float: center;
-	position: static;
 	padding: 5px;
+	_text-align: center;
 	background-color:#BBB;
 	width: 800px;
 }
@@ -20,12 +19,13 @@ p {
 	color: #000;
 }
 
-.siteLock {
-        display: block;
+div#siteLock {
 	background: transparent;
 	margin: -5px auto 5px auto;
 	text-align: center;
 	padding: 0;
+	position: relative;
+	float: none
 	height: auto;
 	width: 768px;
 	clear: all;
@@ -43,11 +43,11 @@ div {
 }
 
 div#block {
-	width: 200px;
+	width: auto;
 	font-size: 12px;
 	height: auto;
-	position: static;
-	float: static;
+	position: relative;
+	float: left;
 	background-color:#BBB;
 }
 
@@ -59,7 +59,7 @@ div#textos {
 	font-family: arial, times, Times, georgia, serif;
 	font-size: 13px;
 	height: auto;
-	float: relative;
+	float: left;
 	position: static;
 	line-height: 20px;
 	background-color:#BBB
@@ -68,8 +68,6 @@ div#textos {
 div#header {
 	position: static;
 	width: auto;
-	text: center;
-	float: center;
 	padding: 0;
 	color:#000;
 	background-color:#BBB;
